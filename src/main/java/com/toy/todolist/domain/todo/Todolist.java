@@ -26,4 +26,5 @@ public class Todolist {
         this.content = content;
         this.isCompleted = isCompleted;
     }
+
 }
