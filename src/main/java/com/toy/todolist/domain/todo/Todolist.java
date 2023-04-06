@@ -27,4 +27,9 @@ public class Todolist {
         this.isCompleted = isCompleted;
     }
 
+    public void update(String content, Boolean isCompleted) {
+        this.content = content;
+        this.isCompleted = isCompleted;
+    }
+
 }
