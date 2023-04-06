@@ -1,14 +1,13 @@
 package com.toy.todolist.domain.todo;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import javax.persistence.*;
 
 @NoArgsConstructor
 @Getter
-@Setter
 @Entity
 public class Todolist {
 
@@ -21,4 +20,10 @@ public class Todolist {
 
     @Column(nullable = false)
     private Boolean isCompleted;
+
+    @Builder
+    public Todolist(String content, Boolean isCompleted) {
+        this.content = content;
+        this.isCompleted = isCompleted;
+    }
 }
